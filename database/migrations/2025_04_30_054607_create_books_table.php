@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('author');
             $table->string('publisher');
             $table->year('year');
+            $table->string('informasi');
             $table->timestamps();
         });
     }

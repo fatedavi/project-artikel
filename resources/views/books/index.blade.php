@@ -19,6 +19,7 @@
                 <th>Author</th>
                 <th>Publisher</th>
                 <th>Year</th>
+                <th>Informasi</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -29,6 +30,7 @@
                     <td>{{ $book->author }}</td>
                     <td>{{ $book->publisher }}</td>
                     <td>{{ $book->year }}</td>
+                    <td>{{ $book->informasi }}</td>
                     <td>
                         <a href="{{ route('books.edit', $book->id) }}">Edit</a>
                         <form action="{{ route('books.destroy', $book->id) }}" method="POST" style="display:inline;">

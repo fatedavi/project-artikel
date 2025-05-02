@@ -14,5 +14,6 @@ class Book extends Model
         'author',
         'publisher',
         'year',
+        'informasi',
     ];
 }
