@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\PinjamController;
 
 Route::get('/', function () {
     return view('home');
@@ -28,4 +29,5 @@ Route::get('/register', [AuthController::class, 'showRegisterForm'])->name('regi
 Route::post('/register', [AuthController::class, 'register']);
 
 Route::resource('books', BookController::class)->middleware('checkrole:admin');
-Route::get('/pinjam', [BookController::class, 'getListBook']);
+Route::resource('pinjam', PinjamController::class)->middleware('checkrole:user');
+

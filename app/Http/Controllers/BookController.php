@@ -57,9 +57,5 @@ class BookController extends Controller
 
         return redirect()->route('books.index')->with('success', 'Book deleted successfully.');
     }
-    public function getListBook()
-    {
-        $book=Book::all();
-        return view('pinjam.index', compact('book'));
-    }
+   
 }

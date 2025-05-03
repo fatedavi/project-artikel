@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Login - Perpustakaan</title>
-</head>
+@extends('././layouts.app')
+
+@section('content')
 <body>
     <h2>Login</h2>
 
@@ -31,3 +28,4 @@
     </form>
 </body>
 </html>
+@endsection

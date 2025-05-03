@@ -17,9 +17,30 @@
                 <li><a href="/posts" class="hover:underline">Post</a></li>
             </ul>
         </div>
+    @auth
+            <span>Hai, {{ auth()->user()->name }}</span>
+        
+            <form method="POST" action="{{ route('logout') }}">
+                @csrf
+                <button type="submit" class="text-red-500 hover:underline">Logout</button>
+            </form>
+
+            @endauth
+
+
+            @guest
+            <a href="{{ route('login') }}" class="text-white-500 hover:underline">Login</a>
+        @endguest
+  
     </nav>
 
     <div class="container mx-auto mt-4">
+        @if (session('error'))
+    <div class="bg-red-100 text-red-700 p-4 rounded mb-4">
+        {{ session('error') }}
+    </div>
+@endif
+
         @yield('content')
     </div>
 
