@@ -13,7 +13,7 @@
             <a href="/" class="text-lg font-semibold">My Laravel App1</a>
             <ul class="flex space-x-4">
                 <li><a href="/" class="hover:underline">Home</a></li>
-                <li><a href="/articles" class="hover:underline">Articles</a></li>
+                <li><a href="/pinjam" class="hover:underline">Articles</a></li>
                 <li><a href="/posts" class="hover:underline">Post</a></li>
             </ul>
         </div>

@@ -11,6 +11,7 @@
         <p>Title: <input type="text" name="title"></p>
         <p>Author: <input type="text" name="author"></p>
         <p>Publisher: <input type="text" name="publisher"></p>
+        <p>Informasi: <input type="text" name="informasi"></p>
         <p>Year: <input type="text" name="year"></p>
 
         <button type="submit">Save</button>
